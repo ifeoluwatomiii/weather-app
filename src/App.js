@@ -8,7 +8,12 @@ const App = () => {
   const [location, setLocation] = useState("")
   const [isLoading, setIsLoading] = useState("false")
 
-  const url =`https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=d238f3d10174cee92c5e4994bd2da960&units=metric`
+
+
+
+  const apikey = process.env.REACT_APP_API_KEY
+
+  const url =`https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=${apikey}&units=metric`
 
   const handleClick = (event) => {
       axios.get(url).then((response) => {
@@ -41,7 +46,7 @@ const App = () => {
       
       <div className='px-[180px] text-center'>
         <p className='font-bold text-[60px]'>{data.name}</p>
-        
+
         </div>
       
       <div className='text-center font-bold text-8xl' >
