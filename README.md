@@ -8,6 +8,8 @@ In the project directory, you can run:
 
 ### `npm start`
 
+Project Demo: https://weather-7fu1f8uzy-ifemi27.vercel.app/
+
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
